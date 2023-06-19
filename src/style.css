@@ -1,0 +1,60 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-left: 4rem;
+}
+
+.content-wrapper {
+  display: flex;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  justify-content: space-evenly;
+}
+
+.score-box {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #000;
+}
+
+.block {
+  display: flex;
+  gap: 0.5rem;
+  padding-right: 15rem;
+  padding-left: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form button {
+  border: 3px solid black;
+  box-shadow: 3px 3px;
+  width: auto;
+  margin-left: auto;
+  padding: 0.5em;
+}
+
+.score-board header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .refresh {
+  border: 3px solid black;
+  box-shadow: 3px 3px;
+  margin-top: 1rem;
+  height: 2rem;
+}
+
+.score-box div:nth-child(even) {
+  background-color: rgb(235, 235, 235);
+}
