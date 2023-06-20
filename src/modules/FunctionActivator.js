@@ -6,7 +6,7 @@ const userName = document.getElementById('name-input');
 const userScore = document.getElementById('score-input');
 const refresh = document.querySelector('.refresh');
 
-function postActivator() {
+const postActivator =()=>{
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     createGame(userName.value, userScore.value);
@@ -14,7 +14,7 @@ function postActivator() {
   });
 }
 
-function getActivator() {
+const getActivator =()=>{
   refresh.addEventListener('click', async () => {
     await scoreBox();
   });
