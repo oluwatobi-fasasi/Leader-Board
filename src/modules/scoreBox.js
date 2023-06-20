@@ -1,15 +1,12 @@
-import getScore from "./GetFunction";
+import getScore from './GetFunction.js';
 
-
-
-
-const scoreBox = async function() {
+const scoreBox = async () => {
   const dataGetScore = await getScore();
   const scoreBoard = document.getElementById('score-board');
   const scoreBoxWrapper = document.createElement('section');
   scoreBoxWrapper.classList.add('score-box');
-  scoreBoard.innerHTML ='';
-  for(let i = 0; i < dataGetScore.length; i++){
+  scoreBoard.innerHTML = '';
+  for (let i = 0; i < dataGetScore.length; i += 1) {
     const div = document.createElement('div');
     div.classList.add('block');
     const name = document.createElement('p');
@@ -25,7 +22,6 @@ const scoreBox = async function() {
     scoreBoxWrapper.appendChild(div);
 
     scoreBoard.appendChild(scoreBoxWrapper);
-
   }
 };
 export default scoreBox;
