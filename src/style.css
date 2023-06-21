@@ -5,6 +5,11 @@ body {
   font-family: sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
 h1 {
   margin-left: 4rem;
 }
@@ -48,7 +53,8 @@ form button {
   justify-content: space-between;
 }
 
-header .refresh {
+header .refresh,
+header .new-game {
   border: 3px solid black;
   box-shadow: 3px 3px;
   margin-top: 1rem;
